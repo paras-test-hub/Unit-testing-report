@@ -1,0 +1,762 @@
+<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Test Report</title><style>
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0f0f10;color:#e6e6e6;margin:0}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+    .title{font-size:20px;font-weight:700}
+    .stamp{opacity:.7;font-size:12px}
+    .summary{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+    .card{background:#171719;border:1px solid #26262a;border-radius:10px;padding:14px 16px;min-width:140px}
+    .label{font-size:12px;color:#a0a0a0}
+    .value{font-size:22px;font-weight:700;margin-top:6px}
+    .value.fail{color:#ff6b6b}
+    .value.pass{color:#47d16c}
+    .value.skip{color:#f7c948}
+    .section{margin-top:24px}
+    .section h2{font-size:16px;margin:0 0 10px 0}
+    .test{background:#141416;border:1px solid #26262a;border-radius:10px;padding:12px 14px;margin-bottom:8px}
+    .test.fail{border-color:#ff6b6b33;background:#201517}
+    .file{font-size:12px;color:#a0a0a0;margin-bottom:6px;word-break:break-all}
+    .name{font-size:14px;font-weight:600}
+    .msg{margin-top:8px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;white-space:pre-wrap;background:#0d0d0f;border:1px solid #242428;border-radius:8px;padding:10px}
+    .muted{color:#a0a0a0}
+  </style></head><body>
+    <div class="wrap">
+      <div class="header"><div class="title">Unit Test Report</div><div class="stamp">Generated: 30/10/2025, 9:36:13 am</div></div>
+      <div class="summary">
+        <div class="card"><div class="label">Total</div><div class="value">52</div></div>
+        <div class="card"><div class="label">Passed</div><div class="value pass">10</div></div>
+        <div class="card"><div class="label">Failed</div><div class="value fail">42</div></div>
+        <div class="card"><div class="label">Skipped</div><div class="value skip">0</div></div>
+      </div>
+      <div class="section">
+        <h2>Failed tests</h2>
+        
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/academics/Academics.test.jsx</div>
+      <div class="name">Academics Page › renders without crashing</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at FilterPopup (C:/Thanos/lms-student-mobile-app/src/component/filterPopup/index.jsx:8:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/academics/AnnouncementPage.test.jsx</div>
+      <div class="name">Academics AnnouncementPage renders</div>
+      <div class="msg">ReferenceError: IntersectionObserver is not defined
+    at initIntersectionObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)
+    at observeIntersection (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)
+    at InViewFeature.startObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)
+    at InViewFeature.mount (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)
+    at HTMLVisualElement.updateFeatures (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/render/VisualElement.mjs:263:29)
+    at file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/utils/use-visual-element.mjs:69:23
+    at commitHookEffectListMount (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23189:26)
+    at commitLayoutEffectOnFiber (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23312:15)
+    at commitLayoutMountEffects_complete (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24727:9)
+    at commitLayoutEffects_begin (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24713:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/academics/AssignmentPage.test.jsx</div>
+      <div class="name">Academics AssignmentPage renders</div>
+      <div class="msg">ReferenceError: IntersectionObserver is not defined
+    at initIntersectionObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)
+    at observeIntersection (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)
+    at InViewFeature.startObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)
+    at InViewFeature.mount (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)
+    at HTMLVisualElement.updateFeatures (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/render/VisualElement.mjs:263:29)
+    at file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/utils/use-visual-element.mjs:69:23
+    at commitHookEffectListMount (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23189:26)
+    at commitLayoutEffectOnFiber (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23312:15)
+    at commitLayoutMountEffects_complete (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24727:9)
+    at commitLayoutEffects_begin (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24713:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/academics/ClassmatePage.test.jsx</div>
+      <div class="name">Academics ClassmatePage renders</div>
+      <div class="msg">ReferenceError: IntersectionObserver is not defined
+    at initIntersectionObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)
+    at observeIntersection (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)
+    at InViewFeature.startObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)
+    at InViewFeature.mount (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)
+    at HTMLVisualElement.updateFeatures (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/render/VisualElement.mjs:263:29)
+    at file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/utils/use-visual-element.mjs:69:23
+    at commitHookEffectListMount (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23189:26)
+    at commitLayoutEffectOnFiber (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23312:15)
+    at commitLayoutMountEffects_complete (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24727:9)
+    at commitLayoutEffects_begin (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24713:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/academics/DoubtsPage.test.jsx</div>
+      <div class="name">Academics DoubtsPage renders</div>
+      <div class="msg">ReferenceError: IntersectionObserver is not defined
+    at initIntersectionObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)
+    at observeIntersection (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)
+    at InViewFeature.startObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)
+    at InViewFeature.mount (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)
+    at HTMLVisualElement.updateFeatures (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/render/VisualElement.mjs:263:29)
+    at file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/utils/use-visual-element.mjs:69:23
+    at commitHookEffectListMount (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23189:26)
+    at commitLayoutEffectOnFiber (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23312:15)
+    at commitLayoutMountEffects_complete (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24727:9)
+    at commitLayoutEffects_begin (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24713:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/academics/GradesPage.test.jsx</div>
+      <div class="name">Academics GradesPage renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at GradesPage (C:/Thanos/lms-student-mobile-app/src/pages/academics/pages/GradesPage.jsx:40:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/academics/NoDataFound.test.jsx</div>
+      <div class="name">Academics NoDataFound renders</div>
+      <div class="msg">ReferenceError: IntersectionObserver is not defined
+    at initIntersectionObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)
+    at observeIntersection (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)
+    at InViewFeature.startObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)
+    at InViewFeature.mount (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)
+    at HTMLVisualElement.updateFeatures (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/render/VisualElement.mjs:263:29)
+    at file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/utils/use-visual-element.mjs:69:23
+    at commitHookEffectListMount (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23189:26)
+    at commitLayoutEffectOnFiber (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23312:15)
+    at commitLayoutMountEffects_complete (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24727:9)
+    at commitLayoutEffects_begin (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24713:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/academics/ResourcesPage.test.jsx</div>
+      <div class="name">Academics ResourcesPage renders</div>
+      <div class="msg">Error: useLocation() may be used only in the context of a &lt;Router&gt; component.
+    at invariant (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:338:11)
+    at useLocation (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:4977:3)
+    at ResourcesPage (C:/Thanos/lms-student-mobile-app/src/pages/academics/pages/ResourcesPage.jsx:22:22)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/academics/SessionPage.test.jsx</div>
+      <div class="name">Academics SessionPage renders</div>
+      <div class="msg">ReferenceError: IntersectionObserver is not defined
+    at initIntersectionObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)
+    at observeIntersection (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)
+    at InViewFeature.startObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)
+    at InViewFeature.mount (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)
+    at HTMLVisualElement.updateFeatures (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/render/VisualElement.mjs:263:29)
+    at file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/utils/use-visual-element.mjs:69:23
+    at commitHookEffectListMount (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23189:26)
+    at commitLayoutEffectOnFiber (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23312:15)
+    at commitLayoutMountEffects_complete (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24727:9)
+    at commitLayoutEffects_begin (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24713:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/apps/Integration.test.jsx</div>
+      <div class="name">Apps Integration page renders</div>
+      <div class="msg">Error: useLocation() may be used only in the context of a &lt;Router&gt; component.
+    at invariant (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:338:11)
+    at useLocation (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:4977:3)
+    at Integration (C:/Thanos/lms-student-mobile-app/src/pages/apps/Integration.jsx:14:20)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/announcement/Announcement.test.jsx</div>
+      <div class="name">Announcement page renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at FilterPopup (C:/Thanos/lms-student-mobile-app/src/component/filterPopup/index.jsx:8:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/announcement/Starred.test.jsx</div>
+      <div class="name">News Starred renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at Starred (C:/Thanos/lms-student-mobile-app/src/pages/news/Starred.jsx:22:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/assignments/AssignmentDetails.test.jsx</div>
+      <div class="name">Assignment details page renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at AssignmentDetail (C:/Thanos/lms-student-mobile-app/src/pages/assignments/assignmentDetails/index.jsx:48:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/assignments/Assignments.test.jsx</div>
+      <div class="name">Assignments page renders</div>
+      <div class="msg">Error: useLocation() may be used only in the context of a &lt;Router&gt; component.
+    at invariant (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:338:11)
+    at useLocation (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:4977:3)
+    at useSearchParams (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:9312:18)
+    at Assignments (C:/Thanos/lms-student-mobile-app/src/pages/assignments/index.jsx:59:28)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/assignments/CourseAssignments.test.jsx</div>
+      <div class="name">CourseAssignments page renders</div>
+      <div class="msg">Error: useLocation() may be used only in the context of a &lt;Router&gt; component.
+    at invariant (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:338:11)
+    at useLocation (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:4977:3)
+    at CourseAssignments (C:/Thanos/lms-student-mobile-app/src/pages/assignments/CourseAssignments.jsx/index.jsx:43:22)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/capstone/Capstone.test.jsx</div>
+      <div class="name">Capstone page renders</div>
+      <div class="msg">Error: useLocation() may be used only in the context of a &lt;Router&gt; component.
+    at invariant (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:338:11)
+    at useLocation (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:4977:3)
+    at Capstone (C:/Thanos/lms-student-mobile-app/src/pages/capstone/Capstone.jsx:30:22)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/capstone/MetricsPage.test.jsx</div>
+      <div class="name">Capstone MetricsPage renders</div>
+      <div class="msg">ReferenceError: IntersectionObserver is not defined
+    at initIntersectionObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)
+    at observeIntersection (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)
+    at InViewFeature.startObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)
+    at InViewFeature.mount (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)
+    at HTMLVisualElement.updateFeatures (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/render/VisualElement.mjs:263:29)
+    at file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/utils/use-visual-element.mjs:69:23
+    at commitHookEffectListMount (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23189:26)
+    at commitLayoutEffectOnFiber (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23312:15)
+    at commitLayoutMountEffects_complete (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24727:9)
+    at commitLayoutEffects_begin (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24713:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/attendance/Attendance.test.jsx</div>
+      <div class="name">Attendance page renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at Attendance (C:/Thanos/lms-student-mobile-app/src/pages/Attendance/index.jsx:26:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/dashboard/DashboardExtras.test.jsx</div>
+      <div class="name">LeaderBoardComponent renders when enabled</div>
+      <div class="msg">TypeError: Cannot destructure property &#039;isLeaderBoardOn&#039; of &#039;(0 , __vite_ssr_import_3__.useSelector)(...)&#039; as it is undefined.
+    at LeaderBoardComponent2 (C:/Thanos/lms-student-mobile-app/src/pages/dashboard/index.jsx:387:13)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at updateSimpleMemoComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:19454:10)
+    at updateMemoComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:19303:14)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21712:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/dashboard/DashboardExtras.test.jsx</div>
+      <div class="name">EventSwiper renders header when events present</div>
+      <div class="msg">TypeError: Cannot destructure property &#039;eventData&#039; of &#039;(0 , __vite_ssr_import_3__.useSelector)(...)&#039; as it is undefined.
+    at EventSwiper (C:/Thanos/lms-student-mobile-app/src/pages/dashboard/index.jsx:470:13)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:25789:22)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/dashboard/DashboardExtras.test.jsx</div>
+      <div class="name">EventSwiper returns null when no events</div>
+      <div class="msg">TypeError: Cannot destructure property &#039;eventData&#039; of &#039;(0 , __vite_ssr_import_3__.useSelector)(...)&#039; as it is undefined.
+    at EventSwiper (C:/Thanos/lms-student-mobile-app/src/pages/dashboard/index.jsx:470:13)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:25789:22)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/dashboard/InfoWidget.test.jsx</div>
+      <div class="name">renders CGPA or Attendance cards and News slider</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at InfoWidget2 (C:/Thanos/lms-student-mobile-app/src/pages/dashboard/InfoWidget.jsx:48:17)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at updateSimpleMemoComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:19454:10)
+    at updateMemoComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:19303:14)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21712:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/dashboard/TodoList.test.jsx</div>
+      <div class="name">renders tabs and shows empty states</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at TodoList2 (C:/Thanos/lms-student-mobile-app/src/pages/dashboard/TodoList.jsx:23:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at updateSimpleMemoComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:19454:10)
+    at updateMemoComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:19303:14)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21712:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/dashboard/UserSession.test.jsx</div>
+      <div class="name">renders schedule header and empty state when no sessions/events</div>
+      <div class="msg">TypeError: Cannot destructure property &#039;sessionData&#039; of &#039;(0 , __vite_ssr_import_2__.useSelector)(...)&#039; as it is undefined.
+    at UserSession2 (C:/Thanos/lms-student-mobile-app/src/pages/dashboard/UserSession.jsx:60:13)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at updateSimpleMemoComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:19454:10)
+    at updateMemoComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:19303:14)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21712:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/dashboard/ViewDetails.test.jsx</div>
+      <div class="name">renders agenda popup with sessions list</div>
+      <div class="msg">TypeError: Cannot destructure property &#039;popupData&#039; of &#039;(0 , __vite_ssr_import_1__.useSelector)(...)&#039; as it is undefined.
+    at ViewDetails (C:/Thanos/lms-student-mobile-app/src/pages/dashboard/ViewDetails/ViewDetails.jsx:60:13)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:25789:22)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/consent/ConsentForm.test.jsx</div>
+      <div class="name">ConsentForm page renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at ConsentForm (C:/Thanos/lms-student-mobile-app/src/pages/ConsentForm/index.jsx:26:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/doubt-and-discussion/DoubtDiscussion.test.jsx</div>
+      <div class="name">Doubt &amp; Discussion index renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at DoubtIndex (C:/Thanos/lms-student-mobile-app/src/pages/DoubtAndDiscussion/DoubtIndex.jsx:86:17)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/events-and-clubs/Events.test.jsx</div>
+      <div class="name">Events &amp; Clubs - Events page renders</div>
+      <div class="msg">SyntaxError: &quot;undefined&quot; is not valid JSON
+    at JSON.parse (&lt;anonymous&gt;)
+    at Events (C:/Thanos/lms-student-mobile-app/src/pages/EventsAndClubs/Events/index.jsx:46:25)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:25889:20)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/events-and-clubs/NewEvent.test.jsx</div>
+      <div class="name">Events &amp; Clubs - NewEvent renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at MultiSelect (C:/Thanos/lms-student-mobile-app/src/pages/setting/AboutMe/AddEditExperience.jsx:506:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/events/Events.test.jsx</div>
+      <div class="name">Events page renders</div>
+      <div class="msg">ReferenceError: IntersectionObserver is not defined
+    at initIntersectionObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)
+    at observeIntersection (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)
+    at InViewFeature.startObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)
+    at InViewFeature.mount (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)
+    at HTMLVisualElement.updateFeatures (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/render/VisualElement.mjs:263:29)
+    at file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/utils/use-visual-element.mjs:69:23
+    at commitHookEffectListMount (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23189:26)
+    at commitLayoutEffectOnFiber (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23312:15)
+    at commitLayoutMountEffects_complete (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24727:9)
+    at commitLayoutEffects_begin (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24713:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/events/MyEvents.test.jsx</div>
+      <div class="name">MyEvents page renders</div>
+      <div class="msg">ReferenceError: IntersectionObserver is not defined
+    at initIntersectionObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)
+    at observeIntersection (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)
+    at InViewFeature.startObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)
+    at InViewFeature.mount (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)
+    at HTMLVisualElement.updateFeatures (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/render/VisualElement.mjs:263:29)
+    at file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/utils/use-visual-element.mjs:69:23
+    at commitHookEffectListMount (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23189:26)
+    at commitLayoutEffectOnFiber (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23312:15)
+    at commitLayoutMountEffects_complete (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24727:9)
+    at commitLayoutEffects_begin (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24713:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/explore/ExploreAll.test.jsx</div>
+      <div class="name">ExploreAll page renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at ExploreAll (C:/Thanos/lms-student-mobile-app/src/pages/exploreAll/index.jsx:267:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/fee/Fees.test.jsx</div>
+      <div class="name">FeeManagement page renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at FeeManagement (C:/Thanos/lms-student-mobile-app/src/pages/feeManagement/index.jsx:37:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/globalsearch/GlobalSearch.test.jsx</div>
+      <div class="name">GlobalSearch page renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at GlobalSearch (C:/Thanos/lms-student-mobile-app/src/pages/GlobalSearch/index.jsx:46:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/grades/Grades.test.jsx</div>
+      <div class="name">Grades page renders</div>
+      <div class="msg">Error: useLocation() may be used only in the context of a &lt;Router&gt; component.
+    at invariant (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:338:11)
+    at useLocation (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:4977:3)
+    at useSearchParams (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:9312:18)
+    at Grades (C:/Thanos/lms-student-mobile-app/src/pages/Grades/index.jsx:51:28)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/news/News.test.jsx</div>
+      <div class="name">News page renders</div>
+      <div class="msg">Error: useLocation() may be used only in the context of a &lt;Router&gt; component.
+    at invariant (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:338:11)
+    at useLocation (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:4977:3)
+    at useSearchParams (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:9312:18)
+    at News (C:/Thanos/lms-student-mobile-app/src/pages/news/index.jsx:29:28)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/leaderboard/LeaderBoard.test.jsx</div>
+      <div class="name">LeadersBoard page renders</div>
+      <div class="msg">SyntaxError: &quot;undefined&quot; is not valid JSON
+    at JSON.parse (&lt;anonymous&gt;)
+    at MobileLeadersBoard (C:/Thanos/lms-student-mobile-app/src/pages/leadersBoard/index.jsx:51:27)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:25889:20)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/quiz/Quiz.test.jsx</div>
+      <div class="name">Quiz page renders</div>
+      <div class="msg">Error: useLocation() may be used only in the context of a &lt;Router&gt; component.
+    at invariant (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:338:11)
+    at useLocation (C:\Thanos\lms-student-mobile-app\node_modules\react-router\dist\development\index.js:4977:3)
+    at Quiz (C:/Thanos/lms-student-mobile-app/src/pages/Quiz/index.jsx:24:22)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/quiz/QuizSubmittedPopup.test.jsx</div>
+      <div class="name">QuizSubmittedPopup renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at QuizSubmitted (C:/Thanos/lms-student-mobile-app/src/pages/Quiz/QuizSubmittedPopup.jsx:63:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/repository/Repository.test.jsx</div>
+      <div class="name">Repository page renders</div>
+      <div class="msg">ReferenceError: IntersectionObserver is not defined
+    at initIntersectionObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)
+    at observeIntersection (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)
+    at InViewFeature.startObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)
+    at InViewFeature.mount (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)
+    at HTMLVisualElement.updateFeatures (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/render/VisualElement.mjs:263:29)
+    at file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/utils/use-visual-element.mjs:69:23
+    at commitHookEffectListMount (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23189:26)
+    at commitLayoutEffectOnFiber (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23312:15)
+    at commitLayoutMountEffects_complete (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24727:9)
+    at commitLayoutEffects_begin (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24713:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/notification/Notification.test.jsx</div>
+      <div class="name">Notification page renders</div>
+      <div class="msg">Error: ThemeProvider: Please make sure your useTheme hook is within a `&lt;ThemeProvider&gt;`
+    at de (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:9651)
+    at exports.useTheme (C:\Thanos\lms-student-mobile-app\node_modules\styled-components\dist\styled-components.cjs.js:1:30063)
+    at Notification (C:/Thanos/lms-student-mobile-app/src/pages/Notification/index.jsx:73:19)
+    at renderWithHooks (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at beginWork$1 (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
+    at performUnitOfWork (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
+    at workLoopSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
+    at renderRootSync (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)</div>
+    </div>
+  
+    <div class="test fail">
+      <div class="file">C:/Thanos/lms-student-mobile-app/tests/pages/tickets/Tickets.test.jsx</div>
+      <div class="name">Tickets page renders</div>
+      <div class="msg">ReferenceError: IntersectionObserver is not defined
+    at initIntersectionObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)
+    at observeIntersection (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)
+    at InViewFeature.startObserver (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)
+    at InViewFeature.mount (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)
+    at HTMLVisualElement.updateFeatures (file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/render/VisualElement.mjs:263:29)
+    at file:///C:/Thanos/lms-student-mobile-app/node_modules/motion/dist/es/framer-motion/dist/es/motion/utils/use-visual-element.mjs:69:23
+    at commitHookEffectListMount (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23189:26)
+    at commitLayoutEffectOnFiber (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:23312:15)
+    at commitLayoutMountEffects_complete (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24727:9)
+    at commitLayoutEffects_begin (C:\Thanos\lms-student-mobile-app\node_modules\react-dom\cjs\react-dom.development.js:24713:7)</div>
+    </div>
+  
+      </div>
+      <div class="section">
+        <h2>Recent passes (up to 50)</h2>
+        
+    <div class="test">
+      <div class="file muted">C:/Thanos/lms-student-mobile-app/tests/smoke.test.js</div>
+      <div class="name">smoke › adds numbers</div>
+    </div>
+  
+    <div class="test">
+      <div class="file muted">C:/Thanos/lms-student-mobile-app/tests/pages/academics/DetailsPage.test.jsx</div>
+      <div class="name">Academics DetailsPage renders</div>
+    </div>
+  
+    <div class="test">
+      <div class="file muted">C:/Thanos/lms-student-mobile-app/tests/pages/dashboard/Dashboard.test.jsx</div>
+      <div class="name">renders dashboard sections</div>
+    </div>
+  
+    <div class="test">
+      <div class="file muted">C:/Thanos/lms-student-mobile-app/tests/pages/Login/Login.test.jsx</div>
+      <div class="name">renders login page and switches to form</div>
+    </div>
+  
+    <div class="test">
+      <div class="file muted">C:/Thanos/lms-student-mobile-app/tests/pages/Login/LoginStyle.test.jsx</div>
+      <div class="name">renders styled MobileBackgroundLogin</div>
+    </div>
+  
+    <div class="test">
+      <div class="file muted">C:/Thanos/lms-student-mobile-app/tests/pages/Login/MobileCreatePassword.test.jsx</div>
+      <div class="name">renders create password screen</div>
+    </div>
+  
+    <div class="test">
+      <div class="file muted">C:/Thanos/lms-student-mobile-app/tests/pages/Login/MobileForgotPassword.test.jsx</div>
+      <div class="name">renders forgot password screen</div>
+    </div>
+  
+    <div class="test">
+      <div class="file muted">C:/Thanos/lms-student-mobile-app/tests/pages/Login/MobileParentLogin.test.jsx</div>
+      <div class="name">renders parent login screen</div>
+    </div>
+  
+    <div class="test">
+      <div class="file muted">C:/Thanos/lms-student-mobile-app/tests/pages/Login/MobileParentOtp.test.jsx</div>
+      <div class="name">renders parent otp screen</div>
+    </div>
+  
+    <div class="test">
+      <div class="file muted">C:/Thanos/lms-student-mobile-app/tests/pages/quiz/QuizInstruction.test.jsx</div>
+      <div class="name">QuizInstruction renders</div>
+    </div>
+  
+      </div>
+    </div>
+  </body></html>
